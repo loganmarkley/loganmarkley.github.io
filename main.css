@@ -1,0 +1,79 @@
+/*
+About: My CSS file for my personal website!
+Creator: Logan Markley
+Start Date: 10/6/2022 (sophomore year of Missouri S&T)
+*/
+
+html{margin-left:0px; padding-left:0px;}
+
+body {
+    background-color: rgb(190, 200, 214);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: rgb(5, 44, 82);
+    position: fixed;
+    top: 0;
+    width: 99%;
+    outline: auto;
+}
+.navbar a{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 13px 16px;
+    color:aliceblue;
+
+    font-style: italic;
+    text-decoration: none;
+    
+    outline: solid 0.5px black;
+}
+.navbar a:hover{
+    background-color: aliceblue;
+    color:black
+}
+
+.separateNavbar {margin-top: 55px;}
+
+.list{left: 380vw; text-align: center;}
+
+.highlight{color: rgb(231, 130, 97);}
+
+.image{
+    width: 270px; 
+    height: 360px;
+}
+
+.align{
+    text-align: center;
+    overflow:auto;
+}
+
+.smallText{font-size:small}
+
+h1, h4{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: -2px 2px 2px rgb(49, 104, 156);
+}
+
+h4{
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 1px;
+}
+
+p{
+    font-size: 20px;
+}
+
+li{
+    margin-bottom: 5px;
+}

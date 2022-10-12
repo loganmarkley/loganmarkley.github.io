@@ -19,7 +19,6 @@ body {
     top: 0;
     width: 100%;
     outline: auto;
-    /* margin: 0px; */
     right:0;
 }
 .navbar a{
@@ -53,6 +52,7 @@ body {
 .align{
     text-align: center;
     overflow:auto;
+    position:relative;
 }
 
 .smallText{font-size:small}

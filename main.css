@@ -12,11 +12,12 @@ body {
 }
 
 .navbar{
+    z-index: 999;           /* makes sure that the navbar stays above everything else */
     overflow: hidden;
     background-color: rgb(5, 44, 82);
     position: fixed;
     top: 0;
-    width: 99%;
+    width: 1500px;
     outline: auto;
 }
 .navbar a{
@@ -38,7 +39,7 @@ body {
 
 .separateNavbar {margin-top: 55px;}
 
-.list{left: 380vw; text-align: center;}
+.list{text-align: center;}
 
 .highlight{color: rgb(231, 130, 97);}
 

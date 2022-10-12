@@ -20,6 +20,7 @@ body {
     width: 100%;
     outline: auto;
     margin: 0px;
+    right:0;
 }
 .navbar a{
     float: left;

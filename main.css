@@ -9,7 +9,6 @@ html{margin-left:0px; padding-left:0px;}
 body {
     background-color: rgb(190, 200, 214);
     font-family: 'Barlow Semi Condensed', sans-serif;
-    margin: 0px;
 }
 
 .navbar{
@@ -20,7 +19,7 @@ body {
     top: 0;
     width: 100%;
     outline: auto;
-    /* margin: 0px; */
+    margin: 0px;
 }
 .navbar a{
     float: left;

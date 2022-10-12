@@ -17,8 +17,9 @@ body {
     background-color: rgb(5, 44, 82);
     position: fixed;
     top: 0;
-    width: 1500px;
+    width: 99%;
     outline: auto;
+    margin: 0px;
 }
 .navbar a{
     float: left;

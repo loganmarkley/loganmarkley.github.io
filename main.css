@@ -19,7 +19,7 @@ body {
     top: 0;
     width: 100%;
     outline: auto;
-    margin: 0px;
+    /* margin: 0px; */
     right:0;
 }
 .navbar a{

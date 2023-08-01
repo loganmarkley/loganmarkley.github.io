@@ -45,8 +45,8 @@ body {
 .highlight{color: rgb(231, 130, 97);}
 
 .suitImages{
-    width: 270px; 
-    height: 360px;
+    width: auto; 
+    height: 350px;
 }
 
 .align{

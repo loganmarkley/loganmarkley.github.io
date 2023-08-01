@@ -1,5 +1,4 @@
-# loganmarkley.github.io
-My Personal Website!
+# My Personal Website!
  
 This is my very first HTML project that I started on 10-6-2022!
 I made this from scratch using the fundamental aspects of HTML and CSS.

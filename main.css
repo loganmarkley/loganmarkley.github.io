@@ -37,6 +37,11 @@ body {
     background-color: aliceblue;
     color:black
 }
+.navbar a:active{
+    background-color: rgb(43, 54, 66);
+    transform: translateY(1px);
+    color: aliceblue;
+}
 
 .separateNavbar {margin-top: 55px;}
 
@@ -69,11 +74,30 @@ body {
     background-color: rgb(162, 183, 207);
 }
 
+.myProjectsScrollButtons:active{
+    background-color: rgb(43, 54, 66);
+    transform: translateY(2px);
+    color: aliceblue;
+}
+
 .myProjectsGIFs{
     position: relative;
     width: auto;
     height: 590px;
     top: -648px;
+}
+
+.myProjectsLanguageImages{
+    position: relative;
+    width: auto;
+    height: 60px;
+    top: -630px;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 30%;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    opacity: 30%;
 }
 
 .smallText{font-size:small}

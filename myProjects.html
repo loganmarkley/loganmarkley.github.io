@@ -16,7 +16,7 @@ File Creation Date: 8/1/2023
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,5 +38,26 @@ File Creation Date: 8/1/2023
             <hr>
         </div>
 
+        <center>
+            <div>
+                <br>
+                <h2 id="proj1Title" style="display:block">Snake Game</h2>
+                <h2 id="proj2Title" style="display:none">Slots</h2>
+                <h2 id="proj3Title" style="display:none">Portfolio Website</h2>
+
+                <svg width="900" height="600">
+                    <rect width="900" height="600" style="fill:rgba(190, 189, 189, 0.486);stroke-width:3;stroke:rgb(0,0,0)" />
+                </svg>
+            </div>
+            <button id="leftButton" onclick="rotateLeft()" class="myProjectsScrollButtons" style="top: -335px; left: -21.5em;">←</button>
+            <button id="rightButton" onclick="rotateRight()" class="myProjectsScrollButtons" style="top: -335px; left: 21.5em;">→</button>
+            <div>
+                <img id="proj1GIF" class="myProjectsGIFs" src="./Images/ProjectGIFs/proj1GIF.gif" style="display:block">
+                <img id="proj2GIF" class="myProjectsGIFs" src="./Images/ProjectGIFs/proj2GIF.gif" style="display:none">
+                <img id="proj3GIF" class="myProjectsGIFs" src="./Images/ProjectGIFs/proj3GIF.gif" style="display:none">
+            </div>
+        </center>
+
+        <script src="./myProjects.js"></script>
     </body>
 </html>

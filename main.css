@@ -55,6 +55,27 @@ body {
     position:relative;
 }
 
+.myProjectsScrollButtons{
+    position: relative;
+    background-color: rgb(128, 151, 199);
+    border-width: 1.5px;
+    width: 50px;
+    height: 50px;
+    border-radius:40%;
+    font-size: 23px;
+}
+
+.myProjectsScrollButtons:hover{
+    background-color: rgb(162, 183, 207);
+}
+
+.myProjectsGIFs{
+    position: relative;
+    width: auto;
+    height: 590px;
+    top: -648px;
+}
+
 .smallText{font-size:small}
 
 h1, h4{
@@ -65,6 +86,12 @@ h1{
     font-size: 50px;
     margin-bottom: 20px;
     text-shadow: -2px 2px 2px rgb(49, 104, 156);
+}
+
+h2{
+    font-size: 32px;
+    text-shadow: -1px 2px 2px rgba(131, 79, 173, 0.575);
+    padding-bottom: 5px;
 }
 
 h4{

@@ -62,6 +62,7 @@ body {
 
 .myProjectsScrollButtons{
     position: relative;
+    top: -325px; 
     background-color: rgb(128, 151, 199);
     border-width: 1.5px;
     width: 50px;
@@ -82,17 +83,17 @@ body {
 
 .myProjectsGIFs{
     position: relative;
-    height: 590px;
+    height: 551px;
     max-width: 890px;
     width: auto;
-    top: -648px;
+    top: -609px;
 }
 
 .myProjectsLanguageImages{
     position: relative;
     width: auto;
     height: 60px;
-    top: -630px;
+    top: -590px;
     background-color: rgba(0, 0, 0, 0.185);
     border-radius: 30%;
     padding: 5px;

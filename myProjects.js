@@ -11,6 +11,8 @@ function rotateLeft()
     document.getElementById(titleID).style.display = 'none';
     document.getElementById(gifID).style.display = 'none';
 
+    let previousWidth = parseInt(document.getElementById('backgroundRECT').style.width);
+
     if(currentProjectNumber == 1)
     {
         currentProjectNumber = numOfProjects;
@@ -23,12 +25,26 @@ function rotateLeft()
     document.getElementById(titleID).style.display = 'block';
     document.getElementById(gifID).style.display = 'block';
     highlightLanguages(currentProjectNumber);
+
+    let width = document.getElementById(gifID).width + 10;
+    let changeInWidth =  (width - previousWidth) / 2;
+    document.getElementById('backgroundSVG').style.width = width;
+    document.getElementById('backgroundRECT').style.width = width;
+
+    let originalString = document.getElementById('rightButton').style.left;
+    let newString = originalString.substring(0, originalString.length - 2);
+    let tmpInt = parseInt(newString);
+    tmpInt += changeInWidth;
+    document.getElementById('leftButton').style.left = '-' + tmpInt.toString() + 'px';
+    document.getElementById('rightButton').style.left = tmpInt.toString() + 'px';
 }
 
 function rotateRight()
 {
     document.getElementById(titleID).style.display = 'none';
     document.getElementById(gifID).style.display = 'none';
+
+    let previousWidth = parseInt(document.getElementById('backgroundRECT').style.width);
 
     if(currentProjectNumber == numOfProjects)
     {
@@ -42,6 +58,18 @@ function rotateRight()
     document.getElementById(titleID).style.display = 'block';
     document.getElementById(gifID).style.display = 'block';
     highlightLanguages(currentProjectNumber);
+
+    let width = document.getElementById(gifID).width + 10;
+    let changeInWidth =  (width - previousWidth) / 2;
+    document.getElementById('backgroundSVG').style.width = width;
+    document.getElementById('backgroundRECT').style.width = width;
+
+    let originalString = document.getElementById('rightButton').style.left;
+    let newString = originalString.substring(0, originalString.length - 2);
+    let tmpInt = parseInt(newString);
+    tmpInt += changeInWidth;
+    document.getElementById('leftButton').style.left = '-' + tmpInt.toString() + 'px';
+    document.getElementById('rightButton').style.left = tmpInt.toString() + 'px';
 }
 
 function concatenateString(strg, idNUM)

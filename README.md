@@ -9,3 +9,6 @@ Having my own website with my name and details about me on it is incredible but 
 
 # The Home Page:
 ![](https://github.com/loganmarkley/loganmarkley.github.io/blob/main/Images/DemoIMG.png?raw=true)
+
+# Video Demo:
+![](https://github.com/loganmarkley/loganmarkley.github.io/blob/main/WebsiteDemo.gif?raw=true)

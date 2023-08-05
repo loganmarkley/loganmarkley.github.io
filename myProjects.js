@@ -2,7 +2,7 @@
 
 highlightLanguages(1);
 let currentProjectNumber = 1;
-let numOfProjects = 3;
+let numOfProjects = 4;
 let titleID = concatenateString('title',currentProjectNumber);
 let gifID = concatenateString('gif',currentProjectNumber);
 
@@ -63,11 +63,17 @@ function highlightLanguages(idNUM)
     }
     else if(idNUM == 2)
     {
+        document.getElementById('python').style.opacity = '100%';
+        document.getElementById('python').style.borderStyle = 'solid';
+        document.getElementById('python').style.borderWidth = '1px';
+    }
+    else if(idNUM == 3)
+    {
         document.getElementById('java').style.opacity = '100%';
         document.getElementById('java').style.borderStyle = 'solid';
         document.getElementById('java').style.borderWidth = '1px';
     }
-    else if(idNUM == 3)
+    else if(idNUM == 4)
     {
         document.getElementById('javascript').style.opacity = '100%';
         document.getElementById('javascript').style.borderStyle = 'solid';

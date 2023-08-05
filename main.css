@@ -82,8 +82,9 @@ body {
 
 .myProjectsGIFs{
     position: relative;
-    width: auto;
     height: 590px;
+    max-width: 890px;
+    width: auto;
     top: -648px;
 }
 

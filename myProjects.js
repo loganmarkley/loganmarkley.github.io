@@ -2,7 +2,7 @@
 
 highlightLanguages(1);
 let currentProjectNumber = 1;
-let numOfProjects = 4;
+let numOfProjects = 5;
 let titleID = concatenateString('title',currentProjectNumber);
 let gifID = concatenateString('gif',currentProjectNumber);
 
@@ -83,13 +83,7 @@ function concatenateString(strg, idNUM)
 function highlightLanguages(idNUM)
 {
     darkenAllLanguages();
-    if(idNUM == 1)
-    {
-        document.getElementById('python').style.opacity = '100%';
-        document.getElementById('python').style.borderStyle = 'solid';
-        document.getElementById('python').style.borderWidth = '1px';
-    }
-    else if(idNUM == 2)
+    if(idNUM == 1 || idNUM == 2)
     {
         document.getElementById('python').style.opacity = '100%';
         document.getElementById('python').style.borderStyle = 'solid';
@@ -107,6 +101,16 @@ function highlightLanguages(idNUM)
         document.getElementById('javascript').style.borderStyle = 'solid';
         document.getElementById('javascript').style.borderWidth = '1px';
 
+        document.getElementById('html').style.opacity = '100%';
+        document.getElementById('html').style.borderStyle = 'solid';
+        document.getElementById('html').style.borderWidth = '1px';
+
+        document.getElementById('css').style.opacity = '100%';
+        document.getElementById('css').style.borderStyle = 'solid';
+        document.getElementById('css').style.borderWidth = '1px';
+    }
+    else if(idNUM == 5)
+    {
         document.getElementById('html').style.opacity = '100%';
         document.getElementById('html').style.borderStyle = 'solid';
         document.getElementById('html').style.borderWidth = '1px';

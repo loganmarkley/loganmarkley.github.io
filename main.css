@@ -22,19 +22,24 @@ body {
     right:0;
 }
 .navbar a{
+    font-size: 20px;
     float: left;
     display: block;
     text-align: center;
-    padding: 13px 16px;
+    padding: 9px 17px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 14px;
+    margin-right: 14px;
     color:aliceblue;
-
-    font-style: italic;
+    border-radius: 5px;
     text-decoration: none;
-    
-    outline: solid 0.5px black;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    transition: color 200ms, background-color 200ms, text-shadow 200ms;
 }
 .navbar a:hover{
     background-color: aliceblue;
+    text-shadow: 1px 1px 3px rgb(71, 85, 111);
     color:black
 }
 .navbar a:active{
@@ -69,10 +74,11 @@ body {
     height: 50px;
     border-radius:40%;
     font-size: 23px;
+    transition: color 200ms, background-color 200ms;
 }
 
 .myProjectsScrollButtons:hover{
-    background-color: rgb(162, 183, 207);
+    background-color: rgb(102, 178, 255);
 }
 
 .myProjectsScrollButtons:active{
@@ -124,6 +130,15 @@ h4{
     font-size: 17px;
     font-style: italic;
     margin-top: 1px;
+}
+
+h4 a{
+    transition: color 200ms;
+    color: rgb(85, 129, 204);
+}
+
+h4 a:hover{
+    color: rgb(217, 174, 117);
 }
 
 p{

@@ -7,7 +7,7 @@ Start Date: 10/6/2022 (sophomore year of Missouri S&T)
 html{margin-left:0px; padding-left:0px;}
 
 body {
-    background-color: rgb(190, 200, 214);
+    background-color: rgb(194, 195, 209);
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
@@ -48,7 +48,7 @@ body {
     color: aliceblue;
 }
 
-.separateNavbar {margin-top: 55px;}
+.separateNavbar {margin-top: 60px;}
 
 .list{text-align: center;}
 
@@ -140,6 +140,20 @@ h4 a{
 h4 a:hover{
     color: rgb(217, 174, 117);
 }
+
+.contactLinks{
+    transition: color 200ms;
+    color: rgb(85, 129, 204);
+}
+
+.contactLinks:hover{
+    color: rgb(217, 174, 117);
+}
+
+.contactLinks:active{
+    color: rgb(72, 59, 39);
+}
+
 
 p{
     font-size: 20px;

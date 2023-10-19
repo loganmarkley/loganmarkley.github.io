@@ -1,0 +1,45 @@
+/*
+About: My CSS file for all keyframes in my personal website!
+Creator: Logan Markley
+Start Date: 10/6/2022 (sophomore year of Missouri S&T)
+*/
+
+@keyframes slide-in-from-left {
+    from{
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-from-right {
+    from{
+        transform: translateX(150%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-from-bottom {
+    from{
+        transform: translateY(170%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -2,7 +2,6 @@
 About: All About Me page HTML file for my personal website!
 Creator: Logan Markley
 Start Date: 10/6/2022 (sophomore year of Missouri S&T)
-File Creation Date: 10/7/2022
 -->
 
 <!DOCTYPE html>
@@ -10,14 +9,15 @@ File Creation Date: 10/7/2022
 <html lang="en">
     <head>
         <title>All About Logan Markley</title>
+        <meta charset="UTF-8">
         <meta name="keywords" content="Logan Markley, HTML, CSS, Logan Markley S&T, Logan Markley MST">
         <meta name="description" content="Logan Markley's Personal Website">
         <meta name="author" content="Logan Markley">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="keyframes.css">
 
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@ File Creation Date: 10/7/2022
         </div>
 
         <div>
-            <h1 id="home" class="separateNavbar">All About <span class="highlight">Me</span>!</h1> 
+            <h1 id="home" class="separateNavbar" style="animation: fadeIn 2000ms;">All About <span class="highlight">Me</span>!</h1> 
             <hr>
         </div>
 
@@ -56,17 +56,12 @@ File Creation Date: 10/7/2022
                     <br>After the discussion, I take them on a guided tour of the CS building, noting important features such as the professors' offices and popular rooms.
                     <br>And, of course, many questions are asked along the way, and I do my best to answer them and expand upon them to make the families feel comfortable and welcome!
                 </p>
-                <!--<p>
-                    Also, I have tried out a couple of the Student Design Teams here, but I have not been able to stay in either.
-                    <br>First, I tried out the Formula Electric SAE Design Team.
-                    <br>Then, a semester later, I joined the Multirotor Robot Design Team.
-                </p>-->
 
                 <br>
                 <hr style="width:50%">
-                <img src="./Images/Mjolnir1.jpg" alt="3-D printed Mjolnir #1" width="400" height="auto">
-                <img src="./Images/Mjolnir2.jpg" alt="3-D printed Mjolnir #2" width="400" height="auto">
-                <img src="./Images/Mjolnir3.jpg" alt="3-D printed Mjolnir #3" width="400" height="auto">
+                <img src="./Images/Mjolnir1.jpg" alt="3-D printed Mjolnir #1" width="400" height="auto" style="animation: slide-in-from-left 1000ms;">
+                <img src="./Images/Mjolnir2.jpg" alt="3-D printed Mjolnir #2" width="400" height="auto" style="animation: slide-in-from-bottom 1000ms;">
+                <img src="./Images/Mjolnir3.jpg" alt="3-D printed Mjolnir #3" width="400" height="auto" style="animation: slide-in-from-right 1000ms;">
                 <p>
                     In high school, my favorite class was a digital electronics course in which I eventually made a small version of Mjolnir!
                     <br>It has a flashlight which used wiring and electronics that I created. Also, I fully designed the model using Autodesk Inventor, and this allowed me to 3-D print it.
@@ -78,6 +73,7 @@ File Creation Date: 10/7/2022
                 <p>
                     I love listening to music, playing basketball, watching shows and movies, thrifting, and coding!
                     <br>I grew up just outside of St. Louis, Missouri, and I have always enjoyed video games, puzzles, and challenging my mind.
+                    <br>Check out some of my projects in the "My Projects" section! It has video demos and which languages I used for each.
                 </p>
                 <br><br>
                 <hr>

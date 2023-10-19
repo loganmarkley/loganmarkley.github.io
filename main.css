@@ -8,6 +8,7 @@ html{margin-left:0px; padding-left:0px;}
 
 body {
     background-color: rgb(194, 195, 209);
+    background-image: linear-gradient(90deg, rgb(194, 195, 209), rgb(170, 172, 195), rgb(194, 195, 209));
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 

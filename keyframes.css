@@ -43,3 +43,12 @@ Start Date: 10/6/2022 (sophomore year of Missouri S&T)
         opacity: 1;
     }
 }
+
+@keyframes yellowShadow {
+    from{
+        text-shadow: 0;
+    }
+    to{
+        text-shadow: 0px 0px 6px rgba(255, 224, 46, 0.801);
+    }
+}

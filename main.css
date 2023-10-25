@@ -103,6 +103,7 @@ body {
 
 .myProjectsScrollButtons:hover{
     background-color: rgb(102, 178, 255);
+    cursor: pointer
 }
 
 .myProjectsScrollButtons:active{
@@ -116,19 +117,19 @@ body {
     height: 551px;
     max-width: 920px;
     width: auto;
-    top: -609px;
+    border: 4px solid rgb(50, 64, 71);
 }
 
 .myProjectsLanguageImages{
     position: relative;
     width: auto;
     height: 60px;
-    top: -590px;
     background-color: rgba(0, 0, 0, 0.185);
     border-radius: 30%;
     padding: 5px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 24px;
+    margin-bottom: 19px;
     opacity: 30%;
 }
 

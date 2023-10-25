@@ -8,17 +8,19 @@ let gifID = concatenateString('gif',currentProjectNumber);
 
 function rotateLeft()
 {
+    const previousWidth = parseInt(document.getElementById(gifID).width);
+
     document.getElementById(titleID).style.display = 'none';
     document.getElementById(gifID).style.display = 'none';
-
-    let previousWidth = parseInt(document.getElementById('backgroundRECT').style.width);
 
     if(currentProjectNumber == 1)
     {
         currentProjectNumber = numOfProjects;
     }
     else
+    {
         currentProjectNumber--;
+    }
     titleID = concatenateString('title',currentProjectNumber);
     gifID = concatenateString('gif',currentProjectNumber);
 
@@ -26,32 +28,31 @@ function rotateLeft()
     document.getElementById(gifID).style.display = 'block';
     highlightLanguages(currentProjectNumber);
 
-    let width = document.getElementById(gifID).width + 10;
-    let changeInWidth =  (width - previousWidth) / 2;
-    document.getElementById('backgroundSVG').style.width = width;
-    document.getElementById('backgroundRECT').style.width = width;
+    const width = document.getElementById(gifID).width;
+    const changeInWidth =  (width - previousWidth) / 2;     // each button needs to move half of the change in width
 
-    let originalString = document.getElementById('rightButton').style.left;
-    let newString = originalString.substring(0, originalString.length - 2);
-    let tmpInt = parseInt(newString);
-    tmpInt += changeInWidth;
-    document.getElementById('leftButton').style.left = '-' + tmpInt.toString() + 'px';
-    document.getElementById('rightButton').style.left = tmpInt.toString() + 'px';
+    const originalLeftString = document.getElementById('rightButton').style.left;       // see what the left attribute is currently
+    const leftValue = originalLeftString.substring(0, originalLeftString.length - 2);   // remove the "px" to just get the value
+    const newPositionValue = parseInt(leftValue) + changeInWidth;                       // change that value based on the changeInWidth
+    document.getElementById('leftButton').style.left = '-' + newPositionValue.toString() + 'px';    // implement the changes for the buttons
+    document.getElementById('rightButton').style.left = newPositionValue.toString() + 'px';
 }
 
 function rotateRight()
 {
+    const previousWidth = parseInt(document.getElementById(gifID).width);
+
     document.getElementById(titleID).style.display = 'none';
     document.getElementById(gifID).style.display = 'none';
-
-    let previousWidth = parseInt(document.getElementById('backgroundRECT').style.width);
 
     if(currentProjectNumber == numOfProjects)
     {
         currentProjectNumber = 1;
     }
     else
+    {
         currentProjectNumber++;
+    }
     titleID = concatenateString('title',currentProjectNumber);
     gifID = concatenateString('gif',currentProjectNumber);
 
@@ -59,17 +60,14 @@ function rotateRight()
     document.getElementById(gifID).style.display = 'block';
     highlightLanguages(currentProjectNumber);
 
-    let width = document.getElementById(gifID).width + 10;
-    let changeInWidth =  (width - previousWidth) / 2;
-    document.getElementById('backgroundSVG').style.width = width;
-    document.getElementById('backgroundRECT').style.width = width;
+    const width = document.getElementById(gifID).width;
+    const changeInWidth =  (width - previousWidth) / 2;     // each button needs to move half of the change in width
 
-    let originalString = document.getElementById('rightButton').style.left;
-    let newString = originalString.substring(0, originalString.length - 2);
-    let tmpInt = parseInt(newString);
-    tmpInt += changeInWidth;
-    document.getElementById('leftButton').style.left = '-' + tmpInt.toString() + 'px';
-    document.getElementById('rightButton').style.left = tmpInt.toString() + 'px';
+    const originalLeftString = document.getElementById('rightButton').style.left;       // see what the left attribute is currently
+    const leftValue = originalLeftString.substring(0, originalLeftString.length - 2);   // remove the "px" to just get the value
+    const newPositionValue = parseInt(leftValue) + changeInWidth;                       // change that value based on the changeInWidth
+    document.getElementById('leftButton').style.left = '-' + newPositionValue.toString() + 'px';    // implement the changes for the buttons
+    document.getElementById('rightButton').style.left = newPositionValue.toString() + 'px';
 }
 
 function concatenateString(strg, idNUM)

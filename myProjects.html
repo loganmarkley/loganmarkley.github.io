@@ -39,11 +39,17 @@ File Creation Date: 8/1/2023
 
         <center>
             <div>
-                <h2 id="proj1Title" style="display:block">Room Planner</h2>
-                <h2 id="proj2Title" style="display:none">Snake Game</h2>
-                <h2 id="proj3Title" style="display:none">Slots</h2>
-                <h2 id="proj4Title" style="display:none">Portfolio Website</h2>
-                <h2 id="proj5Title" style="display:none">Coffee By Rosalina</h2>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <button id="leftButton" onclick="rotateLeft()" class="myProjectsScrollButtons">🡨</button>
+                    <div>
+                        <h2 id="proj1Title" style="display:block">Room Planner</h2>
+                        <h2 id="proj2Title" style="display:none">Snake Game</h2>
+                        <h2 id="proj3Title" style="display:none">Slots</h2>
+                        <h2 id="proj4Title" style="display:none">Portfolio Website</h2>
+                        <h2 id="proj5Title" style="display:none">Coffee By Rosalina</h2>
+                    </div>
+                    <button id="rightButton" onclick="rotateRight()" class="myProjectsScrollButtons">🡪</button>
+                </div>
 
                 <div id="gifsDiv" style="width: fit-content;">
                     <img id="proj1GIF" class="myProjectsGIFs" src="https://github.com/loganmarkley/RoomPlanner/blob/main/current_state.gif?raw=true" alt="GIF of my Room Planner" style="display:block">
@@ -54,17 +60,16 @@ File Creation Date: 8/1/2023
                 </div>
             </div>
             
-            <div style="height: 0px;">
-                <button id="leftButton" onclick="rotateLeft()" class="myProjectsScrollButtons" style="left: -460px;">&lt;</button>
-                <button id="rightButton" onclick="rotateRight()" class="myProjectsScrollButtons" style="left: 460px;">&gt;</button>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <h2 style="font-size: 24px; margin-right: 20px; text-decoration: underline 1px; text-underline-offset: 10px;">Language(s) Utilized:</h2>
+                <img id="cplusplus" class="myProjectsLanguageImages" src="./Images/Language Images/cplusplus.svg" alt="C++ Logo">
+                <img id="python" class="myProjectsLanguageImages" src="./Images/Language Images/python.svg" alt="C++ Logo">
+                <img id="java" class="myProjectsLanguageImages" src="./Images/Language Images/java.svg" alt="C++ Logo">
+                <img id="javascript" class="myProjectsLanguageImages" src="./Images/Language Images/javascript.svg" alt="C++ Logo">
+                <img id="html" class="myProjectsLanguageImages" src="./Images/Language Images/html5.svg" alt="C++ Logo">
+                <img id="css" class="myProjectsLanguageImages" src="./Images/Language Images/css3.svg" alt="C++ Logo">
             </div>
             
-            <img id="cplusplus" class="myProjectsLanguageImages" src="./Images/Language Images/cplusplus.svg" alt="C++ Logo">
-            <img id="python" class="myProjectsLanguageImages" src="./Images/Language Images/python.svg" alt="C++ Logo">
-            <img id="java" class="myProjectsLanguageImages" src="./Images/Language Images/java.svg" alt="C++ Logo">
-            <img id="javascript" class="myProjectsLanguageImages" src="./Images/Language Images/javascript.svg" alt="C++ Logo">
-            <img id="html" class="myProjectsLanguageImages" src="./Images/Language Images/html5.svg" alt="C++ Logo">
-            <img id="css" class="myProjectsLanguageImages" src="./Images/Language Images/css3.svg" alt="C++ Logo">
             
         </center>
 

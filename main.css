@@ -91,13 +91,14 @@ body {
 
 .myProjectsScrollButtons{
     position: relative;
-    top: -325px; 
     background-color: rgb(128, 151, 199);
+    margin-left: 30px;
+    margin-right: 30px;
     border-width: 1.5px;
-    width: 50px;
-    height: 50px;
-    border-radius:40%;
-    font-size: 23px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
     transition: color 200ms, background-color 200ms;
 }
 
@@ -121,7 +122,6 @@ body {
 }
 
 .myProjectsLanguageImages{
-    position: relative;
     width: auto;
     height: 60px;
     background-color: rgba(0, 0, 0, 0.185);

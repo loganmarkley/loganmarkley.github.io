@@ -8,8 +8,6 @@ let gifID = concatenateString('gif',currentProjectNumber);
 
 function rotateLeft()
 {
-    const previousWidth = parseInt(document.getElementById(gifID).width);
-
     document.getElementById(titleID).style.display = 'none';
     document.getElementById(gifID).style.display = 'none';
 
@@ -27,21 +25,10 @@ function rotateLeft()
     document.getElementById(titleID).style.display = 'block';
     document.getElementById(gifID).style.display = 'block';
     highlightLanguages(currentProjectNumber);
-
-    const width = document.getElementById(gifID).width;
-    const changeInWidth =  (width - previousWidth) / 2;     // each button needs to move half of the change in width
-
-    const originalLeftString = document.getElementById('rightButton').style.left;       // see what the left attribute is currently
-    const leftValue = originalLeftString.substring(0, originalLeftString.length - 2);   // remove the "px" to just get the value
-    const newPositionValue = parseInt(leftValue) + changeInWidth;                       // change that value based on the changeInWidth
-    document.getElementById('leftButton').style.left = '-' + newPositionValue.toString() + 'px';    // implement the changes for the buttons
-    document.getElementById('rightButton').style.left = newPositionValue.toString() + 'px';
 }
 
 function rotateRight()
 {
-    const previousWidth = parseInt(document.getElementById(gifID).width);
-
     document.getElementById(titleID).style.display = 'none';
     document.getElementById(gifID).style.display = 'none';
 
@@ -59,15 +46,6 @@ function rotateRight()
     document.getElementById(titleID).style.display = 'block';
     document.getElementById(gifID).style.display = 'block';
     highlightLanguages(currentProjectNumber);
-
-    const width = document.getElementById(gifID).width;
-    const changeInWidth =  (width - previousWidth) / 2;     // each button needs to move half of the change in width
-
-    const originalLeftString = document.getElementById('rightButton').style.left;       // see what the left attribute is currently
-    const leftValue = originalLeftString.substring(0, originalLeftString.length - 2);   // remove the "px" to just get the value
-    const newPositionValue = parseInt(leftValue) + changeInWidth;                       // change that value based on the changeInWidth
-    document.getElementById('leftButton').style.left = '-' + newPositionValue.toString() + 'px';    // implement the changes for the buttons
-    document.getElementById('rightButton').style.left = newPositionValue.toString() + 'px';
 }
 
 function concatenateString(strg, idNUM)

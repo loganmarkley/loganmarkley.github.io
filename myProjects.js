@@ -59,7 +59,7 @@ function concatenateString(strg, idNUM)
 function highlightLanguages(idNUM)
 {
     darkenAllLanguages();
-    if(idNUM == 1 || idNUM == 2)
+    if(idNUM == 1 || idNUM == 2 || idNUM == 3)
     {
         document.getElementById('python').style.opacity = '100%';
         document.getElementById('python').style.borderStyle = 'solid';

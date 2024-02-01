@@ -74,6 +74,7 @@ body {
 .separateNavbar {
     margin-top: 60px;
     font-family: Lexend Exa, sans-serif;
+    animation: fadeIn 1000ms ease-in;
 } 
 
 .list{text-align: center;}

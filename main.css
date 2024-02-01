@@ -9,7 +9,8 @@ html{margin-left:0px; padding-left:0px;}
 body {
     background-color: rgb(194, 195, 209);
     background-image: linear-gradient(90deg, rgb(194, 195, 209), rgb(175, 181, 209), rgb(194, 195, 209));
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    /* font-family: 'Barlow Semi Condensed', sans-serif; */
+    font-family: Lexend Deca, sans-serif;
     overflow-x: hidden;
 }
 
@@ -61,7 +62,7 @@ body {
 
 .indexMiniLinksDiv a{
     transition: color 200ms;
-    color: rgb(85, 129, 204);
+    color: rgb(42, 62, 96);
     margin-left: 14px;
     margin-right: 14px;
 }
@@ -70,7 +71,10 @@ body {
     color: rgb(186, 163, 100);
 }
 
-.separateNavbar {margin-top: 60px;}
+.separateNavbar {
+    margin-top: 60px;
+    font-family: Lexend Exa, sans-serif;
+} 
 
 .list{text-align: center;}
 

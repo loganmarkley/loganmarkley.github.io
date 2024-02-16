@@ -172,7 +172,6 @@ h1{
     text-align: center;
     font-size: 50px;
     margin-bottom: 20px;
-    /* text-shadow: -2px 2px 10px rgb(29, 49, 68); */
     text-shadow: 
         -1px -1px 3px rgb(231, 130, 97),  
         1px -1px 3px rgb(231, 130, 97),
@@ -206,32 +205,67 @@ p{
     font-size: 1.1rem;
 }
 
-li{
-    margin-bottom: 5px;
-}
-
 @media screen and (max-width: 540px) {
+    p {
+        font-size: 12px !important;
+    }
+  
     .navbar {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-evenly;
     }
 
     .navbar a{
         margin-left: 2px !important;
         margin-right: 2px !important;
         display: inline;
+        font-size: 14px;
     }
 
     .separateNavbar {
-        font-size: 9vw;
+        font-size: 8vw;
     }
 
     #home h1 {
         font-size: .5rem;
     }
-    /* .image {
-        max-width: 90vw;
-        max-height: 90svh;
-    } */
+
+    #MSTLogo {
+        width: 50vw;
+        margin-top: 14px !important;
+    }
+
+    .suitImages {
+        display: none;
+    }
+
+    .indexMiniLinksDiv {
+        align-items: center;
+        justify-content: center;
+        font-size: 3.5vw;
+    }
+
+    #firstParagraph div{
+        margin-top: 15px !important;
+    }
+
+    #gifsDiv div{
+        width: 94vw !important;
+    }
+
+    .myProjectsGIFs {
+        width: 94vw !important;
+        height: auto !important;
+    }
+
+    .myProjectsLanguageImages {
+        width: 7vw !important;
+        height: auto !important;
+        margin-left: 5px !important;
+    }
+
+    #langsUtilized{
+        font-size: 12px !important;
+        text-decoration: none !important;
+    }
 }

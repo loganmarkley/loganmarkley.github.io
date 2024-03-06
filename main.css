@@ -204,11 +204,58 @@ p{
     font-size: 1.1rem;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1250px) {
+    #smallSmileImg {
+        display: none;
+    }
+
+    #homePageTextDiv {
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    #hrSeparatingIndexPage {
+        margin-right: 5vw;
+        margin-left:5vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #teethSmileImg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #gifsDiv div{
+        max-height: 60svh !important;
+        max-width: 94vw !important;
+        height: auto !important;
+    }
+
+    .myProjectsGIFs {
+        max-height: 60svh !important;
+        max-width: 94vw !important;
+        height: auto !important;
+    }
+
+    .myProjectsLanguageImages {
+        width: 7vw !important;
+        height: auto !important;
+        margin-left: 5px !important;
+    }
+
+    #langsUtilized{
+        font-size: 12px !important;
+        text-decoration: none !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
     p {
         font-size: 12px !important;
     }
-  
+
     .navbar {
         display: flex;
         justify-content: space-evenly;
@@ -246,25 +293,5 @@ p{
 
     #firstParagraph div{
         margin-top: 15px !important;
-    }
-
-    #gifsDiv div{
-        width: 94vw !important;
-    }
-
-    .myProjectsGIFs {
-        width: 94vw !important;
-        height: auto !important;
-    }
-
-    .myProjectsLanguageImages {
-        width: 7vw !important;
-        height: auto !important;
-        margin-left: 5px !important;
-    }
-
-    #langsUtilized{
-        font-size: 12px !important;
-        text-decoration: none !important;
     }
 }

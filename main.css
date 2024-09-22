@@ -25,27 +25,31 @@ body {
     display: flex;
 }
 
+.navbar img {
+    height: 1.6rem;
+    width: auto;
+    margin-right: auto;
+    justify-self: center;
+    align-self: center;
+}
+
 .navbar a:first-child {
-    margin-left: 30px;
+    margin-left: auto;
 }
 
 .navbar a:last-child {
     margin-right: 30px;
 }
 
-.navbar a:nth-child(2) {
-    margin-right: auto;
-}
-
 .navbar a{      /* for the nav bar buttons */
     font-size: 1.2rem;
     display: block;
     text-align: center;
-    padding: 9px 17px;
+    padding: 9px 20px;
     margin-top: 3px;
     margin-bottom: 3px;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 12px;
+    margin-right: 12px;
     color:aliceblue;
     border-radius: 5px;
     text-decoration: none;
@@ -101,7 +105,7 @@ body {
         -1px -1px 3px rgba(0, 0, 0, 0.5),  
         1px -1px 3px rgba(0, 0, 0, 0.5),
         -1px  1px 3px rgba(0, 0, 0, 0.5),
-        1px  1px 3px rgba(0, 0, 0, 0.5), /* Apply multiple shadows with 50% opacity black */
+        1px  1px 3px rgba(0, 0, 0, 0.5),
         -4px 3px 8px rgb(29, 49, 68);
 }
 
@@ -175,7 +179,7 @@ h1{
         -1px -1px 3px rgb(231, 130, 97),  
         1px -1px 3px rgb(231, 130, 97),
         -1px  1px 3px rgb(231, 130, 97),
-        1px  1px 3px rgb(231, 130, 97), /* Apply multiple shadows with 50% opacity black */
+        1px  1px 3px rgb(231, 130, 97),
         -4px 3px 8px rgb(29, 49, 68);
 }
 

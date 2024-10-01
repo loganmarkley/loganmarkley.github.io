@@ -14,37 +14,33 @@ Start Date: 10/6/2022 (sophomore year of Missouri S&T)
         <meta name="keywords" content="Logan Markley, HTML, CSS, Logan Markley S&T, Logan Markley MST">
         <meta name="description" content="Logan Markley's Personal Portfolio Website">
         <meta name="author" content="Logan Markley">
+        <link rel="icon" href="/favicon.ico" />
         
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="keyframes.css">
 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Lexend+Deca:wght@100..900&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
-        
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <div class="navbar"> <!-- This div is for the top menu -->
-            <a href="./index.html" style="text-decoration: underline; text-underline-offset: 7px;">Home</a>
-            <a href="./allAboutMe.html">About</a>
-            <a href="./myProjects.html">Projects</a>
-            <a href="./contactMe.html">Contact</a>
-        </div>
-
-        <div class="indexFlexbox">
-
+            <a href="#">Home</a>
+            <a href="#myProjects">Projects</a>
+            <a id="about-nav-link" style="display: none" href="#allAboutMe">About</a>
+            <a id="contact-nav-link" style="display: none" href="#contactMe">Contact</a>
+            <a id="about-and-contact-nav-link" href="#contactMe">About & Contact</a>
         </div>
 
         <div>
             <h1 id="home" class="separateNavbar">LOGAN <span class="highlight">MARKLEY</span></h1>
-            <hr>
+            <hr style="width: 40vw;">
             <div class="indexMiniLinksDiv"> <!-- this is the mini navbar only on the landing page -->
-                <a href="./allAboutMe.html" style="animation: yellowShadow infinite 1200ms; animation-direction: alternate;">About Me</a> &nbsp
-                <a href="./myProjects.html" style="animation: yellowShadow infinite 1200ms; animation-direction: alternate;">My Projects</a> &nbsp
-                <a href="./contactMe.html" style="animation: yellowShadow infinite 1200ms; animation-direction: alternate;">More Info</a>
+                <a href="#myProjects" style="animation: yellowShadow infinite 1200ms; animation-direction: alternate;">My Projects</a> &nbsp
+                <a href="#allAboutMe" style="animation: yellowShadow infinite 1200ms; animation-direction: alternate;">About Me</a> &nbsp
+                <a href="#contactMe" style="animation: yellowShadow infinite 1200ms; animation-direction: alternate;">Contact Info</a>
             </div>
         </div>
 
@@ -56,10 +52,10 @@ Start Date: 10/6/2022 (sophomore year of Missouri S&T)
                 <p style="font-size: larger;">My name is Logan Markley, and I am a <strong>passionate software developer</strong> studying at <strong style="color: green;">Missouri S&T!</strong><br></p>
                 
                 <p><br>Currently, I am highly interested in Frontend Development as well as Fullstack Development!<br>
-                I spent this whole summer using Vue.js for Frontend Development during my internship with <strong>Momentus Technologies.</strong>
-                <br>Additionally, I am using React, TypeScript, PostgreSQL and Docker for Fullstack development during my research position. </p>
-
-                <p style="font-size: large;">
+                -I spent this whole summer using Vue.js for Frontend Development during my internship with <strong>Momentus Technologies.</strong>
+                <br>-Currently, I am using React, TypeScript, PostgreSQL and Docker for Fullstack development in my research position. </p>
+                    
+                <p>
                     <br>
                     <strong>Check out my projects section to view a few of my most in-depth projects!</strong>
                     <br>
@@ -68,9 +64,116 @@ Start Date: 10/6/2022 (sophomore year of Missouri S&T)
 
             <hr id="hrSeparatingIndexPage" style="display:block; margin-top:0.9em">
             
-            <div>
-                <center><img id="MSTLogo" src="./Images/MSTLogo.png" alt="S&T Logo" width="315" height=auto style="animation: slide-in-from-bottom 900ms; margin-top:30px; "></center>
-            </div>
+            <center><img id="MSTLogo" src="./Images/MSTLogo.png" alt="S&T Logo" width="315" height=auto style="animation: slide-in-from-bottom 900ms; margin-top:30px; "></center>
         </div>
+
+
+        <!-- PROJECTS SECTION -->
+        <div id="myProjects" class="section">
+            <div style="margin-bottom: 20px;">
+                <h1 id="home" class="separateNavbar">My <span class="highlight">Projects</span>!</h1>
+                <hr style="width: 60%;">
+            </div>
+            
+            <center>
+                <div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <button id="leftButton" onclick="rotateLeft()" class="myProjectsScrollButtons">
+                            <span class="material-icons">
+                                chevron_left
+                            </span>
+                        </button>
+                        <div>
+                            <h2 id="proj1Title" style="display:block">Room Planner</h2>
+                            <h2 id="proj2Title" style="display:none">Coffee By Rosalina</h2>
+                            <h2 id="proj3Title" style="display:none">Pathways</h2>
+                            <h2 id="proj4Title" style="display:none">Portfolio Website</h2>
+                        </div>
+                        <button id="rightButton" onclick="rotateRight()" class="myProjectsScrollButtons">
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <div id="gifsDiv" style="width: fit-content;">
+                        <img id="proj1GIF" class="myProjectsGIFs" src="https://github.com/loganmarkley/RoomPlanner/blob/main/current_state.gif?raw=true" alt="GIF of my Room Planner" style="display:block">
+                        <img id="proj2GIF" class="myProjectsGIFs" src="https://github.com/loganmarkley/CoffeeByRosalina/blob/main/DemoGIF.gif?raw=true" alt="GIF of a coffee shop website." style="display:none">
+                        <img id="proj3GIF" class="myProjectsGIFs" src="https://github.com/loganmarkley/Pathways/blob/main/videoDemo.gif?raw=true" alt="GIF of Pathways" style="display:none">
+                        <img id="proj4GIF" class="myProjectsGIFs" src="https://github.com/loganmarkley/loganmarkley.github.io/blob/main/WebsiteDemo.gif?raw=true" alt="GIF of a tour of my portfolio website." style="display:none">
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <h2 id="langsUtilized" style="font-size: 24px; margin-right: 20px; text-decoration: underline 1px; text-underline-offset: 10px;">Language(s) Utilized:</h2>
+                    <img id="cplusplus" class="myProjectsLanguageImages" src="./Images/Language Images/cplusplus.svg" alt="C++ Logo">
+                    <img id="python" class="myProjectsLanguageImages" src="./Images/Language Images/python.svg" alt="C++ Logo">
+                    <img id="java" class="myProjectsLanguageImages" src="./Images/Language Images/java.svg" alt="C++ Logo">
+                    <img id="javascript" class="myProjectsLanguageImages" src="./Images/Language Images/javascript.svg" alt="C++ Logo">
+                    <img id="html" class="myProjectsLanguageImages" src="./Images/Language Images/html5.svg" alt="C++ Logo">
+                    <img id="css" class="myProjectsLanguageImages" src="./Images/Language Images/css3.svg" alt="C++ Logo">
+                </div>
+            </center>
+        </div>
+        <script src="./myProjects.js"></script>
+        
+        
+        <!-- About Me + Contacts Grid -->
+        <div class="about-me-and-contact-section">
+            <!-- ABOUT ME/EXPERIENCES SECTION -->
+            <div id="allAboutMe" class="section" style="grid-column: span 2;">
+                <div>
+                    <h1 id="home" class="separateNavbar">All About <span class="highlight">Me</span>!</h1>
+                    <hr style="width: 60%;">
+                </div>
+                <center>
+                    <p>
+                        <strong>I am a senior studying towards a Bachelor's in Computer Science at the Missouri University of Science and
+                        Technology, and I will graduate in May 2025.</strong>
+                    </p>
+                    <p>
+                        On campus, I take part in undergraduate research, and over the past semester and a half, I have developed a local web application to input, store,
+                        and display data from the manufacturing machines in our lab. 
+                        
+                    </p>
+                    <p>
+                        On top of this, I am currently the President for IEEE - Eta Kappa Nu, and I am the Co-Chair
+                        and Co-Founder of ACM Career, a Special Interest Group within ACM that revolves around career readiness within the Computer Science industry.
+                    </p>
+                    <p>
+                        I really enjoy being active within HKN and ACM, and I am incredibly glad that I have taken up such impactful positions within these organizations!
+                    </p>
+                </center>
+            </div>
+
+            <!-- CONTACT SECTION -->
+            <div id="contactMe" class="section" style="grid-column: span 1;">
+                <div>
+                    <h1 id="home" class="separateNavbar">Contact <span class="highlight">Me</span>!</h1> 
+                    <hr style="width: 60%;">
+                </div>
+            
+                <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
+                    <h2>
+                        My Github: <a href="https://github.com/loganmarkley" target="_blank" class="contactLinks">GitHub</a>
+                    </h2>
+
+                    <h2>
+                        My LinkedIn: <a href="https://www.linkedin.com/in/logan-c-markley" target="_blank" class="contactLinks">LinkedIn</a>
+                    </h2>
+
+                    <h2>
+                        Email Me: <br><a href="mailto:loganmarkley03@gmail.com" target="_blank" class="contactLinks">loganmarkley03@gmail.com</a>
+                    </h2>
+
+                    <h2>
+                        <button class="btn btn-color" onclick="window.open('/L_Markley_Resume.pdf')">Open Resume</button>
+                    </h2>
+                </div>
+            </div>
+
+            <hr style="width:100%; grid-column:span 3;">
+        </div>
+        
     </body>
 </html>

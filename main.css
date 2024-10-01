@@ -11,6 +11,41 @@ body {
     font-family: Lexend Deca, sans-serif;
     font-size: 1.25rem;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    padding-top: 5px;
+    margin-top: 6svh;
+    max-width: 90vw;
+}
+
+.about-me-and-contact-section {
+    display: grid;
+    width: 92vw;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-me-and-contact-section {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .section {
+        max-width: 100vw;
+    }
+
+    #about-and-contact-nav-link {
+        display: none !important;
+    }
+
+    #about-nav-link, #contact-nav-link{
+        display: block !important;
+    }
 }
 
 .navbar{
@@ -85,10 +120,6 @@ body {
 
 .indexMiniLinksDiv a:hover{
     color: rgb(186, 163, 100);
-}
-
-.indexFlexBox {
-    display: flex;
 }
 
 .separateNavbar {
@@ -184,7 +215,7 @@ h1{
 }
 
 h2{
-    font-size: 1.4rem;
+    font-size: 14pt;
     text-shadow: -1px 2px 2px rgba(131, 79, 173, 0.575);
     padding-bottom: 5px;
     text-align: center;
@@ -203,6 +234,25 @@ h2{
     color: rgb(72, 59, 39);
 }
 
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 2rem;
+    font-family: Lexend Deca, Helvetica, sans-serif;
+}
+
+.btn-color {
+    background: rgb(99, 99, 99);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    color: white;
+}
+
+.btn-color:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+}
 
 p{
     font-size: 1.1rem;
